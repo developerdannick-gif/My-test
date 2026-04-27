@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Assignment</title>
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+    }
+
+    .topnavbar{
+      background-color: black;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      font-size: 14px;
+    }
+
+    .topnavbar .left-navbar,
+    .topnavbar .right-navbar{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .topnavbar i{
+      color: green;
+      margin-right: 8px;
+    }
+
+    .topnavbar span{
+      display: flex;
+      align-items: center;
+    }
+
+    .bottomnavbar{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 10px 40px;
+    }
+
+    .logo{
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img{
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .text{
+      color: darkgreen;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .text1{
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+
+   .navlink ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+    ul li a{
+      color: black ;
+      font-weight: bold;
+    }
+
+    ul li a:hover{
+      color: green;
+    }
+.box{
+ 
+    width: 100%;
+    height: 100vh;
+    background-image: url("surv.jpg");
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .words{
+    text-align: center;
+  color :black;
+  max-width: 700px;
+  }
+  .words h1{
+    font-size :40px;
+font-weight :bold;
+margin-bottom: 20px;
+  }
+  .box p{
+    font-size: 16px;
+    margin-bottom: 30px;}
+    .arrow-btn{
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;   
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 30px auto;
+  cursor: default;
+
+  background-color: transparent; 
+}
+
+.arrow-btn i{
+  color: white;
+  font-size: 22px;
+}
+
+.arrow-btn:hover{
+  
+  border-color: green;
+}
+
+.arrow-btn:hover i{
+  color: green;
+}
+.container {
+  display: grid;
+width: 90%;
+max-width:1000px;
+margin: 50px auto;
+grid-template-columns: repeat(2,1fr);
+gap: 30px;
+justify-items: center;
+}
+.card{
+  background: white;
+  padding: 40px 25px;
+  text-align: center;
+border: 1px solid black;
+width: 400px;
+
+}.card i {
+  font-size:50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px
+  color: #8bc34a; 
+}
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #666;
+      line-height: 1.6;
+    }
+    .card:hover {
+      border: 1px solid greenyellow;
+    }.item {
+  background-color: #1c1c1c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.content h1 {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.content p {
+  color: #ccc;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.button {
+  background-color: #6cc000;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: green;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 5px;
+}
+.service {
+  background-color: #f5f5f5;
+  padding: 80px 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.service h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.service p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 900px;
+}
+
+.service span {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 25px;
+}
+
+.service span i {
+  color: #6cc000;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.service p {
+  color: #777;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 8px 0 15px 28px;
+  max-width: 800px;
+}
+
+.tin {
+  text-align: start;
+  max-width: 800px;
+  margin:150px 50px 50px;
+}
+
+.tin h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tin p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.6;
+}
+.elements {
+  display: grid;
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  
+}
+.box1 {
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.box1 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.box1 p {
+  margin: 0;
+  padding: 12px;
+  background: #5a8f1c; 
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+.box1:hover img {
+  transform: scale(1.1);
+}
+.footer {
+  background: #1c1c1c;
+  color: #ccc;
+  width: 100%;
+  
+}
+
+.footer-top {
+  max-width: 1200px;
+  margin: 100px;
+  padding: 70px 40px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr;
+  gap: 80px ;
+}
+.footer-col h2 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-col h2 span {
+  color: #6cc000;
+}
+
+.footer-col h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+
+.footer-col p {
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+
+.footer-col ul {
+  display: block;
+}
+
+.footer-col ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+}
+
+.footer-col ul li a:hover {
+  color: #6cc000;
+}
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.social-icons a:hover {
+  color: #6cc000;
+}
+.line {
+  border: none;
+  height: 1px;
+  background-color: #444;
+  margin: 150px;
+}
+
+.footer-bottom {
+  
+  max-width: 1200px;
+  margin: 120px;
+  
+  display: flex;
+  justify-content: space-between;
+  color: #aaa;
+  font-size: 13px;
+} 
+.footer-bottom p{
+  padding: 70px;
+}
+  </style>
+</head>
+
+<body>
+
+<div class="navbar">
+
+
+  <div class="topnavbar">
+    <div class="left-navbar">
+      <span><i class="fa fa-map-marker"></i> 3rd floor, Kanure House, Bukoto Kampala</span>
+    </div>
+
+    <div class="right-navbar">
+      <span><i class="fa fa-envelope"></i> info@conceptbox.co.ug</span>
+      <span><i class="fa fa-phone"></i> +256757209307 |<br>+256779902079</span>
+    </div>
+  </div>
+
+
+  <div class="bottomnavbar">
+
+    <div class="logo">
+      <img src="cb-logo2.png" alt="logo">
+      <span class="text">Concept</span>
+      <span class="text1">Box</span>
+    </div>
+
+    <div class="navlink">
+      <ul>
+        <li><a href="self test.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+</div>
+<div class="box">
+  <div class="words">
+  <h1>
+ENVIRONMENT CONSERVATION WITH TECHNOLOGY
+  </h1>
+  <p>
+    we provide requirement system for monitoring thequalityof suface and underground water in the region 
+  </p>
+<div class="arrow-btn">
+  <i class="fa fa-arrow-down"></i>
+</div>
+ </div>
+</div>
+<div class="container">
+  <div class="card">
+   <i class="fa-solid fa-box"></i>
+  <h2>Hydrometer</h2>
+  <p>
+We focus on the measurement and analysis of various aspects of water, particularly in natural environments. This plays a crucial role in understanding and managing water resources, including rivers, lakes, and groundwater.</p>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-chart-column"></i>
+    <h2>Environmental Monitoring</h2>
+    <p>We are a pioneering environmental monitoring company at the forefront of advancing sustainable solutions for a greener world with a dedicated commitment to environmental stewardship.</p>
+  </div>
+  <div class="card">
+    <i class="fa-solid fa-cloud-arrow-up"></i>
+    <h2>Automated Weather Stations</h2>
+    <p>
+Our Telecommunication services provide reliable and scalable solutions for businesses of all sizes, including VoIP phone systems, video conferencing, and unified communications.</p>
+  </div>
+  <div class="card">
+  <i class="fa-solid fa-wrench"></i>
+    <h2>Call Center Setup and Configuration</h2>
+    <p>
+Our Call Center Setup and Configuration services leverage the latest technologies and best practices to help businesses deliver exceptional customer service.</p>
+  </div>
+</div>
+<div class="item">
+<div class="content">
+  <h1>ABOUT US</h1>
+  <p>Our team of experts have extensive knowledge and experience in the latest technologies, ensuring that we can provide cutting-edge solutions that help our clients stay ahead of the curve. We understand that every business is different, which is why we take a collaborative approach to every project, working closely with our clients to understand their objectives and develop solutions that meet their specific needs</p>
+<a href="concept box.html" class="button">Click me</a>
+</div>
+<div class="image">
+  <img src="me.jpg" alt="survey">
+</div>
+</div>
+<div class="service">
+  <h2>Our service</h2><br>
+  <p>We have the knowledge and tools to create specialized solutions that are catered to your particular needs, whether you need real-time remote monitoring, undersea mapping, environmental monitoring, or telecommunication solutions</p>
+  <br>
+  <span><i class="fas fa-arrow-right"></i>Telemetry</span>
+<p>Our Telemetry solutions provide real-time monitoring and data analysis to help businesses make informed decisions and optimize their operations.</p><br>
+ <span><i class="fas fa-arrow-right"></i>Bathymetry</span>
+ <p>Our Bathymetry services provide accurate depth measurements for lakes, rivers, and other water bodies to support various applications, including dredging, construction, and navigation.</p><br>
+  <span><i class="fas fa-arrow-right"></i>Environmental monitoring</span>
+ <p>Our Environmental Monitoring solutions help businesses stay compliant with regulatory requirements and manage risks associated with environmental impacts.</p><br>
+  <span><i class="fas fa-arrow-right"></i>Automated Weather Stations</span>
+ <p>Our Telecommunication services provide reliable and scalable solutions for businesses of all sizes, including VoIP phone systems, video conferencing, and unified communications</p><br>
+  <span><i class="fas fa-arrow-right"></i>Our call center services</span>
+ <p>Our Call Center Setup and Configuration services leverage the latest technologies and best practices to help businesses deliver exceptional customer service.</p><br>
+  <span><i class="fas fa-arrow-right"></i>Network Equipment</span>
+ <p>Our Network Equipment solutions provide businesses with reliable and efficient network infrastructure to support their operations.</p><br>
+ <a href="concept box.html"class="button">Go to services</a>
+</div>
+
+  <div class="tin">
+    <h2>Product Catalog</h2>
+    <p>Discover our selection of cutting-edge technological devices that are intended to simplify, improve, and enhance your daily activities.Our items are sourced from top producers and are certain to fulfill the highest standards of quality.</p>
+  </div>
+<div class="elements">
+  <div class="box1">
+    <img src="box1.jpg" alt="">
+    <p>
+Outdoor Access Points</p>
+  </div>
+  <div class="box1">
+    <img src="box2.jpg" alt="" />
+    <p>Routers</p>
+  </div>
+  <div class="box1">
+    <img src="BOX3.jpg" alt="">
+    <p>Network Switches</p>
+  </div>
+  <div class="box1">
+   <img src="box4.jpg" alt="">
+    <p>Transceivers</p>
+  </div>
+  <div class="box1">
+  <img src="box5.jpg" alt="">
+  <p>Indoor Access Points</p>
+</div>
+</div>
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-col">
+      <h2>Concept <span>Box</span></h2>
+      <p>
+        Our team consists of experienced Hydrologists, Application and Database developers,
+        and network administrators. At Concept Box limited, we use creative ideas,
+        cutting-edge technologies and proven methodologies to meet our highly valued clients' needs.
+      </p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <p>
+        3rd Floor, Kamure House Plot 128 Old Kira Road, Bukoto.<br>
+        Kampala, Uganda<br><br>
+        +256 757209307<br><br>
+        info@conceptbox.co.ug
+      </p>
+    </div>
+
+  </div>
+
+ <hr class="line">
+
+  <div class="footer-bottom">
+    <p>© ConceptBox 2026</p>
+    <p>All right reserved</p>
+  </div>
+
+</footer>
+</body>
+</html>
